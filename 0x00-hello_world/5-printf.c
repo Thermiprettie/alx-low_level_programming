@@ -10,6 +10,6 @@
 int main(void)
 {
 	char str1[] = "with proper grammar, but the outcome is a piece of art,\n";
-	puts(str1);
+	printf(str1);
 	return (0);
 }
