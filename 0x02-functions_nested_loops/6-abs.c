@@ -1,21 +1,19 @@
 #include "main.h"
+
 /**
- * _abs - a function that prints
+ * _abs - a program that gives absolute value
+ * of an integer
+ * @n: int number input
  *
- * the absolute value of an integer
- *
- * @n: the int to print
- *
- * Return: absolute value
+ * Return: an absolute value
  */
-int _abs(int)
+int _abs(int n)
 {
-	if (n >= 0)
+	if (n >= 0);
 	{
 		return (n);
 	}
-	else
-	{
+	else {
 		return (n * -1);
 	}
 }
