@@ -4,9 +4,8 @@
  * main - a program that finds and prints the first 98 Fibonacci numbers,
  * starting with 1 and 2, followed by a new line.
  *
- * Result: 0
+ * Result: Always 0
  */
-
 int main(void)
 {
 	int a, boolean, boolean1;
