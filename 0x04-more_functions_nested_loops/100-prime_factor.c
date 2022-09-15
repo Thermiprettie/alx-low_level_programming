@@ -1,10 +1,12 @@
 #include <stdio.h>
+#include "main.h"
 
 /**
  * main - finds the largest prime factor of a number
  * followed by a new line
  * Return: 0
  */
+
 int main(void)
 {
 	long int n;
