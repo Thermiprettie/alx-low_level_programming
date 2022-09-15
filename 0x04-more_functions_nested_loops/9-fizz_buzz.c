@@ -2,13 +2,13 @@
 #include <stdio.h>
 
 /**
- * main - print the numbersfrom 1 to 100
+ * main - print the numbers from 1 to 100
  * followed by a new line
  * print 'Fizz' for multiples of three
  * and print Buzz for the multiples of five
  * FizzBuzz should be printed for multiples of both three and five
  * separate each number or word should be separated by a space
- * Return: numbers
+ * Return: Always 0
  */
 
 int main()
