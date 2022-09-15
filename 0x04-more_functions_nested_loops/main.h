@@ -15,4 +15,6 @@ int mul(int a, int b);
 /* for 3-print_numbers.c */
 void print_numbers(void);
 
+void print_most_numbers(void);
+
 #endif
