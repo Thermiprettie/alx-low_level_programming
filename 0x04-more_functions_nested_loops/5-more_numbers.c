@@ -1,11 +1,9 @@
 #include "main.h"
-
 /**
  * more_numbers - print numbers from 0 to 14 ten times
  * followed by a new line
  * Return: 0 t0 14 ten times
  */
-
 void more_numbers(void)
 {
 	int num;
