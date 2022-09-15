@@ -2,8 +2,7 @@
 
 /**
  * print_line - draws a straight line in the terminal
- * only use _putchar function
- * The character _ should be printed n times
+ * @n: the number of times to print character _
  * line should end with \n
  * print only \n if n is 0 or less
  * Return: straight line
