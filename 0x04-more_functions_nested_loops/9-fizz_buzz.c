@@ -11,7 +11,7 @@
  * Return: Always 0
  */
 
-int main()
+int main(int)
 {
 	int s;
 
