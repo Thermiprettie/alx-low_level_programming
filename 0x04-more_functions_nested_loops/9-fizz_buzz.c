@@ -11,7 +11,7 @@
  * Return: numbers
  */
 
-int main(int)
+int main()
 {
 	int s;
 
