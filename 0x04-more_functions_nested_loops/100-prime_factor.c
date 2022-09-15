@@ -7,7 +7,7 @@
  */
 int main(void)
 {
-	long prm 612852475143, div;
+	long prm = 612852475143, div;
 
 	while (div < (prm / 2))
 	{
