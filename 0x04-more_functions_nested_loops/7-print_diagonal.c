@@ -10,26 +10,25 @@
  * Return: diagonal line
  */
 
-void print_diagonal(int)
+void print_diagonal(int n)
 {
-	int n;
 	int lin;
 	int nt;
 
-	if (n <= 0)
+	if (n > 0)
 	{
-		_putchar('\n');
-	}
-	else
-	{
-		for (lin = 1, lin <= n, lin++)
+		for (lin = 0; lin < n; lin++)
 		{
-			for (nt = 1; nt < lin; nt++)
-			{
+			for (nt = 0; nt < lin; nt++)
 				_putchar(' ');
-			}
 			_putchar('\\');
+
+			if (lin == n - 1)
+				continue;
+
 			_putchar('\n');
 		}
 	}
+
+	_putchar('\n');
 }
