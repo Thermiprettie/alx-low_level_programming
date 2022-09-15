@@ -9,8 +9,10 @@
  * print only \n if n is 0 or less
  * Return: diagonal line
  */
-void print_diagonal(int n)
+
+void print_diagonal(int)
 {
+	int n;
 	int lin;
 	int nt;
 
