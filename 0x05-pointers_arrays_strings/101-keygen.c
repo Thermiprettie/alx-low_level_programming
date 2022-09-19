@@ -26,7 +26,7 @@ int main(void)
 
 	if (s != 2772)
 	{
-		op = (s -- 2772) / 2;
+		op = (s - 2772) / 2;
 		op1 = (s - 2772) / 2;
 		if ((s - 2772) % 2 != 0)
 			op++;
@@ -35,7 +35,7 @@ int main(void)
 		{
 			if (pswd[i] >= (33 + op))
 			{
-				pswd[i] -= dh;
+				pswd[i] -= op;
 				break;
 			}
 		}
