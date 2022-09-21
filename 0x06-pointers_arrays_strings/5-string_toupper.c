@@ -2,6 +2,7 @@
 
 /**
  * string_toupper - changes all lowercase letters of a string to uppercase
+ * @byo: parameter
  * Return: uppercase letters
  */
 char *string_toupper(char *byo)
