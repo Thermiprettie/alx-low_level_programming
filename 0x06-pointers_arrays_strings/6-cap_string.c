@@ -2,36 +2,37 @@
 
 /**
  * cap_string - capitalizes all words of a string
- * @ats: word to capitalise
+ * @str: word to capitalise
+ * 
  * Return: capitalized string
  */
-char *cap_string(char *ats)
+char *cap_string(char *str)
 {
 	int byo = 0;
 
-	while (ats[byo])
+	while (str[byo])
 	{
-		while (!(ats[byo] >= 'a' && ats[byo] <= 'z'))
+		while (!(str[byo] >= 'a' && str[byo] <= 'z'))
 			byo++;
 
-		if (ats[byo - 1] == ' ' ||
-				ats[byo – 1] == '\t' ||
-				ats[byo – 1] == '\n' ||
-				ats[byo – 1] == ',' ||
-				ats[byo – 1] == ';' ||
-				ats[byo – 1] == '.' ||
-				ats[byo – 1] == '!' ||
-				ats[byo – 1] == '?' ||
-				ats[byo – 1] == '"' ||
-				ats[byo – 1] == '(' ||
-				ats[byo – 1] == ')' ||
-				ats[byo – 1] == '{' ||
-				ats[byo – 1] == '}' ||
+		if (str[byo - 1] == ' ' ||
+				str[byo – 1] == '\t' ||
+				str[byo – 1] == '\n' ||
+				str[byo – 1] == ',' ||
+				str[byo – 1] == ';' ||
+				str[byo – 1] == '.' ||
+				str[byo – 1] == '!' ||
+				str[byo – 1] == '?' ||
+				str[byo – 1] == '"' ||
+				str[byo – 1] == '(' ||
+				str[byo – 1] == ')' ||
+				str[byo – 1] == '{' ||
+				str[byo – 1] == '}' ||
 				byo == 0)
-			ats[byo] -= 32;
+			str[byo] -= 32;
 
 		byo++
 	}
 
-	return (ats);
+	return (str);
 }
