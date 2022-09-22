@@ -2,13 +2,13 @@
 
 /**
  * print_number - prints an integer
- * print with _putchar
+ * print with putchar
  * @n: an integer
  * Return: Always 0
  */
 void print_number(int n)
 {
-	unsigned int num = n;;
+	unsigned int num = n;
 
 	if (n < 0)
 	{
