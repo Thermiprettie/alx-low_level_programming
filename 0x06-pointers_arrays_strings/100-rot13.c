@@ -5,7 +5,6 @@
  * @estr: string to encode
  * Return: encoded string
  */
-
 char *rot13(char *estr)
 {
 	int aa = 0, ab;
