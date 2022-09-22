@@ -8,7 +8,8 @@
 char *rot13(char *estr)
 {
 	int aa = 0, ab;
-	char letters[52] = {'A', 'B', 'C', 'D', 'E', 'F',
+	char letters[52] =
+	{'A', 'B', 'C', 'D', 'E', 'F',
 		'G', 'H', 'I', 'J', 'K', 'L',
 		'M', 'N', 'O', 'P', 'Q', 'R',
 		'S', 'T', 'U', 'V', 'W', 'X',
