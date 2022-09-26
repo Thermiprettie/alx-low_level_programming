@@ -3,8 +3,8 @@
 
 /**
  * _strspn - gets the length of a prefix substring
- * @s: parameter
- * @accept: parameter
+ * @s: parameter1
+ * @accept: parameter2
  * Return: number of bytes
  */
 unsigned int _strspn(char *s, char *accept)
