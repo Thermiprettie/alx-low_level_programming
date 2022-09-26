@@ -9,9 +9,9 @@
  */
 unsigned int _strspn(char *s, char *accept)
 {
-	unsigned int sar;
+	unsigned int sra;
 
-	sar = strspn(s, accept);
+	sra = strspn(s, accept);
 
-	return(sar);
+	return(sra);
 }
