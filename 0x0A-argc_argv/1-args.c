@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main -  program that prints the number of arguments passed into it
+ * main - program that prints the number of arguments passed into it
  * 		followed by a new line
  * @argc: argument
  * @argv: pointer
