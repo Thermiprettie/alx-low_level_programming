@@ -34,6 +34,11 @@ int main(int argc, char *argv[])
 		}
 		if ((naira - 5) >= 0)
 		{
+			naira -= 5;
+			continue;
+		}
+		if ((naira - 2) >= 0)
+		{
 			naira -= 2;
 			continue;
 		}
