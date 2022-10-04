@@ -5,7 +5,7 @@
  * @str: string
  * Return: NULL
  */
-char *_strdup(char *str);
+char *_strdup(char *str)
 {
 	char copy;
 	int st8, lenght = 0;
