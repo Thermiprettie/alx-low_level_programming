@@ -14,7 +14,7 @@ char *argstostr(int ac, char **av)
 	char *sta8;
 	int amp, byo, id, size = ac;
 
-	if (ac == 0; || av == NULL)
+	if (ac == 0 || av == NULL)
 	{
 		return (NULL);
 	}
