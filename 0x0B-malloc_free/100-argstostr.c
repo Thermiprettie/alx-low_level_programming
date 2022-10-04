@@ -5,7 +5,7 @@
 /**
  * argstostr - function that concatenates all the arguments of your program
  * @ac: integer
- * @ac: char
+ * @av: char
  * Return: concatenated output
  */
 
@@ -15,9 +15,7 @@ char *argstostr(int ac, char **av)
 	int amp, byo, id, size = ac;
 
 	if (ac == 0 || av == NULL)
-	{
 		return (NULL);
-	}
 
 	for (amp = 0; amp < ac; amp++)
 	{
@@ -28,10 +26,7 @@ char *argstostr(int ac, char **av)
 	sta8 = malloc(sizeof(char) * size + 1);
 
 	if (sta8 == NULL)
-	{
 		return (NULL);
-	}
-
 	id = 0;
 
 	for (amp = 0; amp < ac; amp++)
