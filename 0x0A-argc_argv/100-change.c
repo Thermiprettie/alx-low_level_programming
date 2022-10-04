@@ -10,7 +10,7 @@
  */
 int main(int argc, char *argv[])
 {
-	int naira, penny = 0;
+	int cents, penny = 0;
 
 	if (argc != 2)
 	{
@@ -20,30 +20,30 @@ int main(int argc, char *argv[])
 
 	naira = atoi(argv[1]);
 
-	while (naira > 0)
+	while (cents > 0)
 	{
 		penny++;
-		if ((naira - 25) >= 0)
+		if ((cents - 25) >= 0)
 		{
-			naira -= 25;
+			cents -= 25;
 			continue;
 		}
-		if ((naira - 10) >= 0)
+		if ((cents - 10) >= 0)
 		{
-			naira -= 10;
+			cents -= 10;
 			continue;
 		}
-		if ((naira - 5) >= 0)
+		if ((cents - 5) >= 0)
 		{
-			naira -= 5;
+			cents -= 5;
 			continue;
 		}
-		if ((naira - 2) >= 0)
+		if ((cents - 2) >= 0)
 		{
-			naira -= 2;
+			cents -= 2;
 			continue;
 		}
-		naira--;
+		cents--;
 	}
 
 	printf("%d\n", penny);
