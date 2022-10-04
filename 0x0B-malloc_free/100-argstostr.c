@@ -27,6 +27,7 @@ char *argstostr(int ac, char **av)
 
 	if (sta8 == NULL)
 		return (NULL);
+	
 	id = 0;
 
 	for (amp = 0; amp < ac; amp++)
@@ -34,7 +35,7 @@ char *argstostr(int ac, char **av)
 		for (byo = 0; av[amp][byo]; byo++)
 			sta8[id++] = av[amp][byo];
 
-		sta8[id] = '\n';
+		sta8[id++] = '\n';
 	}
 
 	sta8[size] = '\0';
