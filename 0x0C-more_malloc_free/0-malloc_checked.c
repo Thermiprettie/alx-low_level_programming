@@ -5,7 +5,6 @@
  * @b: bytes
  * Return: void
  */
-
 void *malloc_checked(unsigned int b)
 {
 	void *memory = malloc(b);
