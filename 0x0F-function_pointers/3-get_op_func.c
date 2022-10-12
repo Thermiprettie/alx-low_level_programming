@@ -9,7 +9,7 @@
  */
 int (*get_op_func(char *s))(int, int)
 {
-	op_t op_s[] = {
+	op_t ops[] = {
 		{"+", op_add},
 		{"-", op_sub},
 		{"*", op_mul},
@@ -20,8 +20,8 @@ int (*get_op_func(char *s))(int, int)
 
 	int i = 0;
 
-	while (op_s[i].op != NULL && *(op_s[i].op) != *s)
+	while (ops[i].op != NULL && *(ops[i].op) != *s)
 		i++;
 
-	return (op_s[i].f);
+	return (ops[i].f);
 }
