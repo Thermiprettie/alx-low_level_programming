@@ -1,20 +1,20 @@
 #include "variadic_functions.h"
 
-void print_char(va_list argmt);
-void print_int(va_list argmt);
-void print_float(va_list argmt);
-void print_string(va_list argmt);
+void print_char(va_list arg);
+void print_int(va_list arg);
+void print_float(va_list arg);
+void print_string(va_list arg);
 void print_all(const char * const format, ...);
 
 /**
  * print_char - prints a character
  * @argmt: argument
  */
-void print_char(va_list argmt)
+void print_char(va_list arg)
 {
 	char abc;
 
-	abc = va_arg(argmt, int);
+	abc = va_arg(arg, int);
 	printf("%c", abc);
 }
 
@@ -22,11 +22,11 @@ void print_char(va_list argmt)
  * print_int - prints integers
  * @argmt: argument
  */
-void print_int(va_list argmt)
+void print_int(va_list arg)
 {
 	int number;
 
-	number = va_arg(argmt, int);
+	number = va_arg(arg, int);
 	printf("%d", number);
 }
 
@@ -38,7 +38,7 @@ void print_float(va_list arg)
 {
 	float number;
 
-	number = va_arg(argmt, double);
+	number = va_arg(arg, double);
 	printf("%f", number);
 }
 
@@ -46,11 +46,11 @@ void print_float(va_list arg)
  * print_string - prints a string
  * @argmt: arguments
  */
-void print_string(va_list argmt)
+void print_string(va_list arg)
 {
 	char sta8;
 
-	sta8 = va_arg(argmt, char *);
+	sta8 = va_arg(arg, char *);
 
 	if (sta8 == NULL)
 	{
