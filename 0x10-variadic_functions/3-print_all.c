@@ -48,7 +48,7 @@ void print_float(va_list arg)
  */
 void print_string(va_list arg)
 {
-	char sta8;
+	char *sta8;
 
 	sta8 = va_arg(arg, char *);
 

@@ -4,6 +4,7 @@
  * sum_them_all - function that returns the sum of all its parameters
  * @n: Number of parameters
  * @...: parameter
+ * @sum: the output
  * Return: sum
  */
 int sum_them_all(const unsigned int n, ...)
