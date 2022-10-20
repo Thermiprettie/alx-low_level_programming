@@ -6,17 +6,18 @@
  * @str: string
  * Return: addy of the new element
  */
+
 list_t *add_node_end(list_t **head, const char *str)
 {
-	char *dup;
+	char *dupl;
 	int len;
-	list_t *new, *last;
+	list_t *new, *end;
 
 	new = malloc(sizeof(list_t));
 	if (new == NULL)
 		return (NULL);
 
-	dup = strdup(str);
+	dupl = strdup(str);
 	if (str == NULL)
 	{
 		free(new);
@@ -26,7 +27,7 @@ list_t *add_node_end(list_t **head, const char *str)
 	for (len = 0; str[len];)
 		len++;
 
-	new->str = dup;
+	new->str = dupl;
 	new->len = len;
 	new->next = NULL;
 
@@ -34,10 +35,10 @@ list_t *add_node_end(list_t **head, const char *str)
 		*head = new;
 	else
 	{
-		last = *head;
-		while (last->next != NULL)
-			last = last->next;
-		last->next = new;
+		end = *head;
+		while (end->next != NULL)
+			end = end->next;
+		end->next = new;
 	}
 	return (*head);
 }
