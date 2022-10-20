@@ -5,7 +5,7 @@
  * @head: first node
  * Return: void
  */
-void free_list(list_t *head);
+void free_list(list_t *head)
 {
 	list_t *drop;
 
