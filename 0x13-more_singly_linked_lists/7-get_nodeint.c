@@ -21,7 +21,7 @@ listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 		dup = dup->next;
 	}
 	dup = head;
-	if (index > nodes - 1)
+	if (index > node - 1)
 		return (NULL);
 
 	while (count != index)
