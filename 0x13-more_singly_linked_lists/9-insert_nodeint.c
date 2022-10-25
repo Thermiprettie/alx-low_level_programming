@@ -6,8 +6,8 @@
  * @idx: index of the list for the new node starting at 0
  * @n: new node
  * Return: address of the new node, NUll if it failed
- * 		don't add new node & return NULL if it is impossible
- * 		to return new node
+ * 	don't add new node & return NULL if it is impossible
+ * 	to return new node
  */
 
 listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
