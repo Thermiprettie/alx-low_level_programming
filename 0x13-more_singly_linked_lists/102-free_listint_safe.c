@@ -8,7 +8,7 @@
 
 size_t free_listint_safe(listint_t **h)
 {
-	size_t size = 0;
+	size_t siz_e = 0;
 	listint_t *lst, *tmp;
 	long st8;
 
@@ -18,7 +18,7 @@ size_t free_listint_safe(listint_t **h)
 	*h = NULL;
 	while (lst)
 	{
-		size++;
+		siz_e++;
 		st8 = lst->next - lst;
 		tmp = lst;
 		free(tmp);
@@ -26,5 +26,5 @@ size_t free_listint_safe(listint_t **h)
 			break;
 		lst = lst->next;
 	}
-	return (size);
+	return (siz_e);
 }
