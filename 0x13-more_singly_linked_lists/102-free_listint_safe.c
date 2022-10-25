@@ -14,13 +14,13 @@ size_t free_listint_safe(listint_t **h)
 
 	if (!h)
 		return (0);
-	head = *h;
+	lst = *h;
 	*h = NULL;
-	while (head)
+	while (lst)
 	{
 		size++;
 		st8 = lst->next - lst;
-		tmp = head;
+		tmp = lst;
 		free(tmp);
 		if (st8 >= 0)
 			break;
